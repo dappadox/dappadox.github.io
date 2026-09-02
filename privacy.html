@@ -29,24 +29,34 @@
 <main>
   <div class="glyph"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <h1>Politika privatnosti — Ukrštenica</h1>
-  <p class="meta">Poslednja izmena: 6. avgust 2026.</p>
+  <p class="meta">Poslednja izmena: 2. septembar 2026.</p>
 
-  <p>Aplikaciju <strong>Ukrštenica</strong> razvija <strong>Zigic Digital</strong>
+  <p>Aplikaciju <strong>Ukrštenica</strong> — u Google Play prodavnici
+  navedenu kao <strong>„Ukrštene reči: Skandinavka"</strong>, paket
+  <code>com.appadox.ukrstenica</code> — razvija <strong>Zigic Digital</strong>
   (Im Glattgarten 11, 8304 Wallisellen, Švajcarska; u daljem tekstu: „mi").
-  Ova stranica objašnjava koje podatke aplikacija obrađuje i zašto.</p>
+  Naziv u prodavnici i naziv ispod ikonice se razlikuju; reč je o istoj
+  aplikaciji. Ova stranica objašnjava koje podatke aplikacija obrađuje i
+  zašto.</p>
 
   <h2>Ukratko</h2>
   <ul>
     <li><strong>Nema naloga.</strong> Aplikacija ne traži registraciju, ime,
       adresu e-pošte ni bilo koji lični podatak.</li>
-    <li><strong>Nema reklama</strong> i nema reklamnih SDK-ova trećih strana.</li>
-    <li><strong>Sve ukrštenice se rešavaju lokalno</strong>, na tvom uređaju;
-      napredak se čuva samo na uređaju.</li>
+    <li><strong>Ima reklama.</strong> Prikazuje ih Googleov AdMob: kratka
+      reklama može da se pojavi posle rešene ukrštenice — nikad tokom
+      rešavanja i nikad posle dnevne — a nagradnu reklamu gledaš samo ako
+      sam izabereš. Detalji su u odeljku „Reklame".</li>
+    <li><strong>Sve ukrštenice se rešavaju lokalno</strong>, na tvom
+      uređaju.</li>
+    <li><strong>Napredak može da se kopira</strong>, ali samo na mesto koje
+      ti izabereš — vidi „Kopija napretka".</li>
   </ul>
 
   <h2>Podaci koje aplikacija šalje</h2>
   <p>Radi poboljšanja igre, aplikacija šalje <strong>anonimnu tehničku
-  telemetriju</strong>:</p>
+  telemetriju</strong> na naš server; reklamni sloj uz to koristi
+  <strong>reklamni ID</strong> uređaja, koji obrađuje Google, ne mi:</p>
   <table>
     <tr><th>Podatak</th><th>Primer</th><th>Svrha</th></tr>
     <tr><td>Nasumični identifikator instalacije</td><td><code>a3f9…</code></td>
@@ -59,15 +69,64 @@
         <td>kalibracija težine</td></tr>
     <tr><td>Prijave grešaka</td><td>tekst koji sam uneseš</td>
         <td>ispravka pogrešnih opisa</td></tr>
+    <tr><td>Reklamni ID uređaja</td><td><code>38400000-8cf0-…</code></td>
+        <td>prikazivanje reklama — ide Googleu, ne nama (vidi „Reklame")</td></tr>
   </table>
   <p>Identifikator instalacije je nasumičan broj koji se ne može povezati sa
   tobom, tvojim Google nalogom, ni sa drugim aplikacijama. Ne prikupljamo
   lokaciju, kontakte, IMEI, niti bilo šta izvan tabele iznad.</p>
 
+  <h2>Reklame</h2>
+  <p>Reklame prikazuje <strong>Google AdMob</strong>, u dva oblika:</p>
+  <ul>
+    <li><strong>posle rešene ukrštenice</strong> povremeno se prikaže reklama
+      preko celog ekrana — nikad tokom rešavanja, nikad posle dnevne
+      zagonetke, prve tri rešene uvek prolaze bez ijedne, i između dve
+      reklame stoji razmak od najmanje tri minuta;</li>
+    <li><strong>nagradna reklama</strong> se pušta isključivo na tvoj dodir,
+      kad želiš dodatna otkrivanja slova pošto potrošiš besplatna.</li>
+  </ul>
+  <p>Da bi reklame prikazao, Googleov reklamni SDK obrađuje podatke o
+  uređaju: <strong>reklamni ID</strong>, IP adresu (iz koje izvodi približnu
+  lokaciju), osnovne podatke o uređaju i aplikaciji, i podatke o prikazanim
+  reklamama i klikovima. Ti podaci idu Googleu i za njih važi
+  <a href="https://policies.google.com/privacy">Googleova politika
+  privatnosti</a>; kako Google koristi podatke iz aplikacija partnera piše na
+  <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+  Mi tim podacima ne pristupamo i ne spajamo ih sa telemetrijom.</p>
+  <ul>
+    <li><strong>U Evropskom ekonomskom prostoru, Velikoj Britaniji i
+      Švajcarskoj</strong> reklame se prikazuju tek posle pristanka datog
+      kroz Googleovu poruku; bez pristanka se tamo ne prikazuju.</li>
+    <li><strong>Reklamni ID možeš da resetuješ ili obrišeš</strong> u
+      sistemskim podešavanjima Androida (Podešavanja → Privatnost →
+      Oglasi); aplikacija radi i bez njega.</li>
+  </ul>
+
   <h2>Gde podaci idu</h2>
   <p>Telemetrija se šalje šifrovano (HTTPS) na naš privatni server i vidi je
-  isključivo razvojni tim. Podaci se ne prodaju, ne dele sa trećim stranama
-  i ne koriste za oglašavanje.</p>
+  isključivo razvojni tim. Ne prodaje se i ne koristi za oglašavanje. Jedini
+  podaci koji idu trećoj strani su oni koje reklamni SDK šalje Googleu,
+  opisani u odeljku „Reklame".</p>
+
+  <h2>Kopija napretka</h2>
+  <p>Napredak može da napusti uređaj, ali <strong>samo na tvoj zahtev i samo
+  tamo gde ti kažeš</strong>. Postoje dva puta i oba vode do tebe, ne do
+  nas:</p>
+  <ul>
+    <li><strong>Androidova rezervna kopija.</strong> Ako je u sistemskim
+      podešavanjima uključena, Android sam kopira podatke aplikacije na tvoj
+      Google Drive, u deo vezan za tvoj nalog. Time upravlja Google, ne mi;
+      isključuje se u Podešavanja → Google → Rezervna kopija. Nasumični
+      identifikator instalacije je namerno izostavljen iz te kopije, kao i
+      prijave grešaka.</li>
+    <li><strong>Datoteka koju sam napraviš.</strong> Podešavanja → „Napravi
+      kopiju" upisuje jednu datoteku sa rešenim ukrštenicama i upisanim
+      slovima, pa je preda sistemskom meniju za deljenje. Kuda ide, biraš ti;
+      nama se ne šalje ništa.</li>
+  </ul>
+  <p>U obe kopije ide samo napredak u igri — nema imena, adrese, kontakata
+  ni lokacije, jer ih aplikacija ni nema.</p>
 
   <h2>Obaveštenja</h2>
   <p>Podsetnik za dnevnu ukrštenicu je <strong>lokalno</strong> obaveštenje —
@@ -81,18 +140,29 @@
   <h2>Brisanje podataka</h2>
   <p>Deinstalacijom aplikacije prestaje svako slanje. Ako želiš da se obrišu
   i ranije poslati anonimni događaji tvoje instalacije, javi se na adresu
-  ispod sa identifikatorom instalacije (Podešavanja → O aplikaciji).</p>
+  ispod sa identifikatorom instalacije (Podešavanja → O aplikaciji). Za
+  podatke koje obrađuje Google (reklame) važe Googleovi postupci brisanja,
+  na koje ne utičemo; reklamni ID brišeš u podešavanjima uređaja.</p>
 
   <h2>Kontakt</h2>
   <p>Pitanja o privatnosti: <a href="mailto:drazenzigic@gmail.com">drazenzigic@gmail.com</a></p>
 
-  <p class="en">Privacy summary in English: Ukrštenica is a Serbian crossword
-  game by Zigic Digital (Wallisellen, Switzerland). No account, no ads, no
-  third-party SDKs. The app sends anonymous technical telemetry only (random
-  install id, app version, gameplay events, solve times, user-submitted error
-  reports) over HTTPS to a private endpoint, used solely to improve the game.
-  Nothing is sold or shared. Uninstalling stops all collection; deletion
-  requests: drazenzigic@gmail.com.</p>
+  <p class="en">Privacy summary in English: Ukrštenica (listed on Google Play
+  as "Ukrštene reči: Skandinavka", package com.appadox.ukrstenica) is a
+  Serbian crossword game by Zigic Digital (Wallisellen, Switzerland). No
+  account and no personal data collected by us. The app sends anonymous
+  technical telemetry only (random install id, app version, gameplay events,
+  solve times, user-submitted error reports) over HTTPS to a private
+  endpoint, used solely to improve the game; nothing is sold. Ads are served
+  by Google AdMob — an occasional interstitial after solving (never during a
+  puzzle, never after the daily) and an optional rewarded ad. The AdMob SDK
+  processes the device advertising ID, IP address, device information and
+  ad-interaction data under
+  <a href="https://policies.google.com/privacy">Google's privacy policy</a>;
+  we neither access nor combine that data with our telemetry. In the EEA, the
+  UK and Switzerland ads require consent given through Google's message.
+  Uninstalling stops all collection; deletion requests:
+  drazenzigic@gmail.com.</p>
 
   <footer>© 2026 Zigic Digital, Wallisellen · UID CHE-349.202.291</footer>
 </main>
