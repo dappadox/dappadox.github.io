@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Deutsch 4. Klasse – Lernziele 1–5</title>
+<title>Deutsch 4. Klasse – Lernziele 1–5 + Zusatztraining</title>
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--text:#1f2937;--muted:#667085;--accent:#3157d5;--soft:#eef2ff;--ok:#137a44;--okbg:#eaf8ef;--bad:#a63232;--badbg:#fff0f0;--border:#d9deea;--shadow:0 8px 28px rgba(20,30,60,.08)}
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}button,input{font:inherit}button{touch-action:manipulation}.wrap{max-width:1000px;margin:auto;padding:16px}.top{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;margin-bottom:14px}h1{font-size:clamp(26px,4vw,40px);line-height:1.05;margin:0}.sub{color:var(--muted);margin-top:7px}.progress{display:flex;align-items:center;gap:10px;min-width:min(320px,100%);margin-top:4px}.bar{height:12px;background:#e6e9f1;border-radius:999px;overflow:hidden;flex:1}.fill{height:100%;background:var(--accent);width:0;transition:width .25s ease}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:20px;margin:14px 0}.topics,.levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.topic,.level{padding:16px;border:1px solid var(--border);border-radius:14px;background:#fff;text-align:left;cursor:pointer;min-height:128px}.topic.done,.level.done{background:#f1fbf5;border-color:#b9e7cb}.topic .n,.level .n{font-weight:800;font-size:18px}.topic .d,.level .d{color:var(--muted);font-size:14px;margin-top:7px;line-height:1.4}.badge{display:inline-block;margin-top:11px;padding:5px 9px;border-radius:999px;background:#eef1f6;font-size:12px}.rule{background:#f9fafc;border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:14px;line-height:1.5}.rule strong{display:block;margin-bottom:6px}.exercise{display:none}.exercise.active{display:block}.hidden{display:none!important}.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--muted);font-size:14px;margin-bottom:12px}.prompt{font-size:clamp(20px,3vw,29px);font-weight:760;line-height:1.35;margin:12px 0 18px}.wordgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:10px}.wordbtn,.choice{min-height:52px;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:#fff;cursor:pointer}.wordbtn.selected,.choice.selected{background:var(--soft);border-color:#9eacf0}.wordbtn.correct,.choice.correct{background:var(--okbg);border-color:#91d3aa}.wordbtn.wrong,.choice.wrong{background:var(--badbg);border-color:#e5a1a1}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.primary,.secondary,.danger{min-height:46px;border:0;border-radius:12px;padding:10px 16px;cursor:pointer;font-weight:750}.primary{background:var(--accent);color:white}.secondary{background:#e9edf6;color:var(--text)}.danger{background:#fbe9e9;color:#9d2d2d}.feedback{margin-top:14px;padding:12px 14px;border-radius:12px;display:none;line-height:1.45}.feedback.ok{display:block;background:var(--okbg);color:#17683a}.feedback.bad{display:block;background:var(--badbg);color:#8f2d2d}.articleRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.articleRow button{min-width:100px}.textpassage{line-height:2;font-size:18px;background:#fafbfe;border:1px solid var(--border);border-radius:12px;padding:14px}.token{display:inline;padding:4px 3px;border-radius:7px;cursor:pointer}.token.sel{background:#dfe5ff}.token.correct{background:#dff4e7}.token.wrong{background:#ffdede}input[type=text]{width:100%;min-height:50px;border:1px solid var(--border);border-radius:12px;padding:10px 12px;font-size:18px}.small{font-size:14px;color:var(--muted)}.scorebox{font-size:28px;font-weight:850}.resultgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.stat{border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}.stat b{display:block;font-size:24px;margin-bottom:3px}.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.legend div{border:1px solid var(--border);border-radius:12px;padding:10px;text-align:center}.hint{font-size:14px;color:var(--muted);margin-top:10px}.source-note{font-size:13px;color:var(--muted);margin-top:12px}footer{color:var(--muted);font-size:13px;padding:8px 2px 28px}@media(max-width:700px){.resultgrid,.legend{grid-template-columns:1fr}.wrap{padding:12px}.card{padding:16px}.progress{width:100%}}
@@ -11,8 +11,8 @@
 </head>
 <body>
 <div class="wrap">
-<div class="top"><div><h1>Deutsch 4. Klasse</h1><div class="sub">Interaktiver Trainer · Lernziele 1–5</div></div><div class="progress"><div class="bar"><div id="fill" class="fill"></div></div><b id="pct">0%</b></div></div>
-<section id="topicHome" class="card"><h2 style="margin-top:0">Lernziel auswählen</h2><p>Alle fünf Lernziele sind jetzt einzeln und ausführlich aufgebaut. Lernziel 5 wurde als eigener vollständiger Übungsblock ergänzt.</p><div id="topics" class="topics"></div><div class="actions"><button id="resetAll" class="danger" type="button">Gesamten Fortschritt zurücksetzen</button></div></section>
+<div class="top"><div><h1>Deutsch 4. Klasse</h1><div class="sub">Interaktiver Trainer · Lernziele 1–5 + Zusatztraining</div></div><div class="progress"><div class="bar"><div id="fill" class="fill"></div></div><b id="pct">0%</b></div></div>
+<section id="topicHome" class="card"><h2 style="margin-top:0">Lernziel auswählen</h2><p>Die fünf Lernziele entsprechen dem angekündigten Stoff. Darunter findest du zusätzliches Training zum Vertiefen – ohne neue Grammatikthemen.</p><div id="topics" class="topics"></div><h2 style="margin-top:28px">Zusatztraining</h2><p class="small">Diese Kapitel mischen und vertiefen nur die fünf Lernziele oben: Strategien, aktives Abrufen, Kontext, Fehleranalyse und Generalproben.</p><div id="supplements" class="topics"></div><div class="actions"><button id="resetAll" class="danger" type="button">Gesamten Fortschritt zurücksetzen</button></div></section>
 <section id="roundHome" class="card hidden"><div class="qhead"><span id="topicLabel"></span><button id="allTopics" class="secondary" type="button">Alle Lernziele</button></div><div id="topicRule" class="rule"></div><div id="levels" class="levels"></div><div class="actions"><button id="mistakes" class="secondary" type="button">Fehler nochmals üben</button></div></section>
 <section id="exercise" class="card exercise" aria-live="polite"><div class="qhead"><span id="levelTitle"></span><span id="qcount"></span></div><div id="content"></div><div id="feedback" class="feedback"></div><div class="actions"><button id="check" class="primary" type="button">Prüfen</button><button id="next" class="primary hidden" type="button">Weiter</button><button id="back" class="secondary" type="button">Zu den Runden</button></div></section>
 <footer>Der Fortschritt wird lokal auf diesem Gerät gespeichert. Die Datei funktioniert nach dem Öffnen auch ohne Internet.</footer>
@@ -180,11 +180,186 @@ const topics=[
 {kind:'choiceQ',prompt:'Welche Schreibweise ist richtig?',options:['Das rechnen ist schwierig.','Das Rechnen ist schwierig.'],answer:'Das Rechnen ist schwierig.'},
 {kind:'choiceQ',prompt:'Welche Begründung stimmt?',options:['Ein substantiviertes Verb wird grossgeschrieben.','Ein substantiviertes Verb wird immer kleingeschrieben.'],answer:'Ein substantiviertes Verb wird grossgeschrieben.'}
 ]}
+]},
+
+{title:'Zusatz A · Denkstrategien',desc:'Lerne, welche Probe und welcher Merksatz dir bei einer Aufgabe wirklich hilft.',rule:'Nicht raten: Erst erkennen, welche Art Aufgabe vor dir liegt. Nutze dann gezielt die passende Probe: Artikelprobe, Geschlecht, Artikelart, Singular/Plural oder die Grossschreibung beim substantivierten Verb.',supplement:true,rounds:[
+{title:'1. Welche Probe hilft?',desc:'Wähle die sinnvollste Strategie.',type:'choiceQ',qs:[
+{prompt:'Du bist unsicher, ob „Freude“ ein Nomen ist. Was hilft am besten?',options:['der-die-das-Probe','Plural bilden','Verb konjugieren'],answer:'der-die-das-Probe',explain:'„die Freude“ funktioniert – also ist Freude ein Nomen.'},
+{prompt:'Du sollst das grammatische Geschlecht von „Kamel“ bestimmen. Was brauchst du?',options:['den Artikel','die Mehrzahl','die Satzlänge'],answer:'den Artikel',explain:'„das Kamel“ → sächlich / Neutrum.'},
+{prompt:'Du sollst aus „die Katze“ einen unbestimmten Ausdruck machen. Welche Information brauchst du?',options:['den bestimmten Artikel','die Pluralendung','die Verbform'],answer:'den bestimmten Artikel',explain:'die Katze → eine Katze.'},
+{prompt:'Du sollst die Mehrzahl von „das Kind“ bilden. Was ist gefragt?',options:['Singular → Plural','bestimmt → unbestimmt','Verb → Nomen'],answer:'Singular → Plural'},
+{prompt:'Im Satz steht „Das Schwimmen macht Spass.“ Warum ist Schwimmen gross?',options:['Es wird als Nomen gebraucht.','Alle Verben schreibt man gross.','Es steht am Satzende.'],answer:'Es wird als Nomen gebraucht.'},
+{prompt:'Du siehst „der Hund“. Welches grammatische Geschlecht ist das?',options:['männlich','weiblich','sächlich'],answer:'männlich'},
+{prompt:'Du siehst „eine Uhr“. Ist der Artikel bestimmt oder unbestimmt?',options:['bestimmt','unbestimmt','Plural'],answer:'unbestimmt'},
+{prompt:'Du siehst „die Kinder“. Woran erkennst du hier sicher den Plural?',options:['an der Bedeutung und der Form Kinder','am Artikel die allein','an der Grossschreibung'],answer:'an der Bedeutung und der Form Kinder',explain:'„die“ kann auch bei weiblichen Nomen im Singular stehen.'}]},
+{title:'2. Begriffe sicher',desc:'Ordne die Fachbegriffe richtig zu.',type:'choiceQ',qs:[
+{prompt:'Einzahl bedeutet ...',options:['Singular','Plural','Femininum'],answer:'Singular'},
+{prompt:'Mehrzahl bedeutet ...',options:['Singular','Plural','Neutrum'],answer:'Plural'},
+{prompt:'„der“ zeigt bei einem Nomen normalerweise ...',options:['Maskulinum','Femininum','Neutrum'],answer:'Maskulinum'},
+{prompt:'„die“ zeigt bei einem Nomen im Singular normalerweise ...',options:['Maskulinum','Femininum','Neutrum'],answer:'Femininum'},
+{prompt:'„das“ zeigt ...',options:['Maskulinum','Femininum','Neutrum'],answer:'Neutrum'},
+{prompt:'Welcher Artikel ist bestimmt?',options:['ein','eine','das'],answer:'das'},
+{prompt:'Welcher Artikel ist unbestimmt?',options:['der','die','eine'],answer:'eine'},
+{prompt:'„das Warten“ ist ...',options:['ein substantiviertes Verb','ein kleingeschriebenes Verb','Plural'],answer:'ein substantiviertes Verb'}]},
+{title:'3. Denkfehler vermeiden',desc:'Erkenne typische falsche Abkürzungen beim Denken.',type:'choiceQ',qs:[
+{prompt:'„die“ steht vor einem Wort. Ist das Wort deshalb sicher Plural?',options:['Nein','Ja'],answer:'Nein',explain:'„die Frau“ ist Singular, „die Frauen“ ist Plural.'},
+{prompt:'Ein Wort bezeichnet etwas Unsichtbares. Kann es trotzdem ein Nomen sein?',options:['Ja','Nein'],answer:'Ja',explain:'Zum Beispiel die Freude, die Angst, der Gedanke.'},
+{prompt:'Hat ein Tiername automatisch das natürliche Geschlecht des Tieres?',options:['Nein, entscheidend ist der Artikel.','Ja, immer.'],answer:'Nein, entscheidend ist der Artikel.',explain:'Zum Beispiel das Kamel.'},
+{prompt:'Endet jedes Pluralwort auf -e?',options:['Nein','Ja'],answer:'Nein',explain:'Es gibt viele Formen: Kinder, Lampen, Autos, Häuser usw.'},
+{prompt:'Wird jedes Verb mit „das“ davor grossgeschrieben?',options:['Wenn es als Nomen gebraucht wird, ja.','Nein, niemals.'],answer:'Wenn es als Nomen gebraucht wird, ja.'},
+{prompt:'Ist „ein“ immer männlich?',options:['Nein','Ja'],answer:'Nein',explain:'„ein Haus“ ist sächlich.'},
+{prompt:'Kann Singular und Plural gleich aussehen?',options:['Ja','Nein'],answer:'Ja',explain:'Zum Beispiel das Mädchen – die Mädchen.'},
+{prompt:'Ist Grossschreibung allein genug, um ein Nomen sicher zu erkennen?',options:['Nein, die Probe und der Satzzusammenhang helfen zusätzlich.','Ja, immer.'],answer:'Nein, die Probe und der Satzzusammenhang helfen zusätzlich.'}]},
+{title:'4. Strategie-Mix',desc:'Entscheide zuerst, worauf du achten musst.',type:'choiceQ',qs:[
+{prompt:'„___ Welt“ – was musst du bestimmen?',options:['Artikel / Geschlecht','Pluralendung','substantiviertes Verb'],answer:'Artikel / Geschlecht'},
+{prompt:'„die Spiele“ – was wird hier geprüft?',options:['Singular oder Plural','bestimmt oder unbestimmt','Verb oder Nomen'],answer:'Singular oder Plural'},
+{prompt:'„eine Flasche“ – welche Frage passt?',options:['bestimmter oder unbestimmter Artikel','Singular oder Plural von Spiel','substantiviertes Verb'],answer:'bestimmter oder unbestimmter Artikel'},
+{prompt:'„Das Zeichnen macht Freude.“ – welche Regel ist zentral?',options:['substantiviertes Verb grossschreiben','Plural mit -en','Maskulinum erkennen'],answer:'substantiviertes Verb grossschreiben'},
+{prompt:'„Käfig“ – wie findest du das grammatische Geschlecht?',options:['der Käfig','Käfige zählen','klein schreiben'],answer:'der Käfig'},
+{prompt:'„das Auto → die Autos“ – welche Fähigkeit wird geprüft?',options:['Plural bilden','Artikelart wechseln','Nomen erkennen'],answer:'Plural bilden'},
+{prompt:'„die Freude“ – welche zwei Dinge kannst du damit zugleich prüfen?',options:['Nomen + grammatisches Geschlecht','Plural + Verbform','Satzzeichen + Zeitform'],answer:'Nomen + grammatisches Geschlecht'},
+{prompt:'„Wir warten.“ / „Das Warten.“ – was zeigt den Unterschied besonders gut?',options:['Satzzusammenhang und Artikel','Wortlänge','Pluralendung'],answer:'Satzzusammenhang und Artikel'}]}
+]},
+{title:'Zusatz B · Ohne Auswahl',desc:'Aktives Abrufen: Antworten selbst schreiben statt nur anklicken.',rule:'Wenn du eine Antwort selbst produzieren kannst, ist das Wissen stabiler als beim blossen Wiedererkennen. Hier gibt es bewusst weniger Auswahlmöglichkeiten.',supplement:true,rounds:[
+{title:'1. Artikel selbst schreiben',desc:'Schreibe Artikel und Nomen vollständig.',type:'typing',qs:[
+{prompt:'Schreibe Artikel + Nomen: Hund',answer:'der Hund'},{prompt:'Schreibe Artikel + Nomen: Welt',answer:'die Welt'},{prompt:'Schreibe Artikel + Nomen: Spiel',answer:'das Spiel'},{prompt:'Schreibe Artikel + Nomen: Käfig',answer:'der Käfig'},{prompt:'Schreibe Artikel + Nomen: Butter',answer:'die Butter'},{prompt:'Schreibe Artikel + Nomen: Wasser',answer:'das Wasser'},{prompt:'Schreibe Artikel + Nomen: Wunsch',answer:'der Wunsch'},{prompt:'Schreibe Artikel + Nomen: Nase',answer:'die Nase'}]},
+{title:'2. Geschlecht selbst nennen',desc:'Schreibe männlich, weiblich oder sächlich.',type:'typing',qs:[
+{prompt:'Welches grammatische Geschlecht hat „der Vater“?',answer:'männlich'},{prompt:'Welches grammatische Geschlecht hat „die Mutter“?',answer:'weiblich'},{prompt:'Welches grammatische Geschlecht hat „das Kind“?',answer:'sächlich'},{prompt:'Welches grammatische Geschlecht hat „der Gedanke“?',answer:'männlich'},{prompt:'Welches grammatische Geschlecht hat „die Angst“?',answer:'weiblich'},{prompt:'Welches grammatische Geschlecht hat „das Geräusch“?',answer:'sächlich'}]},
+{title:'3. Artikel umwandeln',desc:'Wechsle bestimmt ↔ unbestimmt.',type:'typing',qs:[
+{prompt:'Unbestimmt schreiben: der Hund',answer:'ein Hund'},{prompt:'Unbestimmt schreiben: die Katze',answer:'eine Katze'},{prompt:'Unbestimmt schreiben: das Auto',answer:'ein Auto'},{prompt:'Bestimmt schreiben: ein Saft',answer:'der Saft'},{prompt:'Bestimmt schreiben: eine Uhr',answer:'die Uhr'},{prompt:'Bestimmt schreiben: ein Einhorn',answer:'das Einhorn'}]},
+{title:'4. Singular ↔ Plural',desc:'Bilde die Gegenform ohne Auswahl.',type:'typing',qs:[
+{prompt:'Mehrzahl von: das Kind',answer:'die Kinder'},{prompt:'Mehrzahl von: der Ball',answer:'die Bälle'},{prompt:'Mehrzahl von: die Lampe',answer:'die Lampen'},{prompt:'Mehrzahl von: das Auto',answer:'die Autos'},{prompt:'Einzahl von: die Bänke',answer:'die Bank'},{prompt:'Einzahl von: die Häuser',answer:'das Haus'},{prompt:'Einzahl von: die Punkte',answer:'der Punkt'},{prompt:'Einzahl von: die Mädchen',answer:'das Mädchen'}]},
+{title:'5. Verben substantivieren',desc:'Schreibe die vollständige Nomenform.',type:'typing',qs:[
+{prompt:'Mache ein Nomen aus: schwimmen',answer:'das Schwimmen'},{prompt:'Mache ein Nomen aus: warten',answer:'das Warten'},{prompt:'Mache ein Nomen aus: fahren',answer:'das Fahren'},{prompt:'Mache ein Nomen aus: zeichnen',answer:'das Zeichnen'},{prompt:'Mache ein Nomen aus: rechnen',answer:'das Rechnen'},{prompt:'Mache ein Nomen aus: lachen',answer:'das Lachen'},{prompt:'Mache ein Nomen aus: sprechen',answer:'das Sprechen'},{prompt:'Mache ein Nomen aus: suchen',answer:'das Suchen'}]}
+]},
+{title:'Zusatz C · Satz- und Textdetektiv',desc:'Wende die Regeln in ganzen Sätzen und kurzen Texten an.',rule:'Im Test stehen Regeln oft nicht isoliert. Lies zuerst den ganzen Satz, dann entscheide anhand von Artikel, Bedeutung und Form.',supplement:true,rounds:[
+{title:'1. Nomen im Kontext',desc:'Markiere alle Nomen im Satz.',type:'sentence',qs:[
+{text:'Am Morgen trägt der Junge seinen Rucksack zur Schule.',nouns:['Morgen','Junge','Rucksack','Schule']},
+{text:'Die Freude über das Geschenk war im ganzen Haus zu spüren.',nouns:['Freude','Geschenk','Haus']},
+{text:'Nach dem Spiel trinken die Kinder Wasser und essen Brot.',nouns:['Spiel','Kinder','Wasser','Brot']},
+{text:'Der Vater legt das Heft neben die Lampe auf den Tisch.',nouns:['Vater','Heft','Lampe','Tisch']},
+{text:'Im Winter liegt Schnee auf dem Weg vor dem Haus.',nouns:['Winter','Schnee','Weg','Haus']}]},
+{title:'2. Artikel aus dem Satz',desc:'Bestimme den Artikel des markierten Nomens.',type:'sentenceArticle',qs:[
+{text:'Der Hund wartet vor dem Haus.',word:'Hund',answer:'der'},{text:'Die Welt ist gross.',word:'Welt',answer:'die'},{text:'Das Spiel beginnt am Nachmittag.',word:'Spiel',answer:'das'},{text:'Der Käfig steht neben dem Fenster.',word:'Käfig',answer:'der'},{text:'Die Butter liegt auf dem Tisch.',word:'Butter',answer:'die'},{text:'Das Vertrauen wächst langsam.',word:'Vertrauen',answer:'das'}]},
+{title:'3. Singular und Plural im Satz',desc:'Achte auf die Form im Zusammenhang.',type:'choiceQ',qs:[
+{prompt:'Im Zimmer steht nur ein ___.',options:['Bett','Betten'],answer:'Bett'},{prompt:'Im Zimmer stehen zwei ___.',options:['Bett','Betten'],answer:'Betten'},{prompt:'Das Kind spielt im Garten. Mehrzahl?',options:['die Kinder spielen im Garten','die Kinds spielen im Garten'],answer:'die Kinder spielen im Garten'},{prompt:'Auf dem Tisch liegt ein Heft. Mehrzahl?',options:['Auf dem Tisch liegen Hefte.','Auf dem Tisch liegen Hefter.'],answer:'Auf dem Tisch liegen Hefte.'},{prompt:'Ein Mädchen wartet. Mehrzahl?',options:['Mädchen warten.','Mädchens warten.'],answer:'Mädchen warten.'},{prompt:'Der Punkt ist richtig. Mehrzahl?',options:['Die Punkte sind richtig.','Die Punkten sind richtig.'],answer:'Die Punkte sind richtig.'}]},
+{title:'4. Verb oder Nomen im Satz?',desc:'Entscheide aus dem Zusammenhang.',type:'choiceQ',qs:[
+{prompt:'Wir ___ auf den Bus.',options:['warten','Warten'],answer:'warten'},{prompt:'Das ___ auf den Bus dauert lange.',options:['warten','Warten'],answer:'Warten'},{prompt:'Die Kinder ___ im See.',options:['schwimmen','Schwimmen'],answer:'schwimmen'},{prompt:'Das ___ im See macht Spass.',options:['schwimmen','Schwimmen'],answer:'Schwimmen'},{prompt:'Wir ___ eine Aufgabe.',options:['rechnen','Rechnen'],answer:'rechnen'},{prompt:'Das ___ braucht Konzentration.',options:['rechnen','Rechnen'],answer:'Rechnen'},{prompt:'Sie ___ ein Bild.',options:['zeichnen','Zeichnen'],answer:'zeichnen'},{prompt:'Das ___ gefällt ihr.',options:['zeichnen','Zeichnen'],answer:'Zeichnen'}]},
+{title:'5. Kurzer Text – alles gemischt',desc:'Mehrere Lernziele in einem Zusammenhang.',type:'mixed',qs:[
+{kind:'sentence',text:'Am Abend nimmt der Junge sein Heft und liest eine Geschichte.',nouns:['Abend','Junge','Heft','Geschichte']},
+{kind:'choiceQ',prompt:'Welcher Artikel passt zu „Geschichte“?',options:['der','die','das'],answer:'die'},
+{kind:'choiceQ',prompt:'„eine Geschichte“ – welcher Artikeltyp?',options:['bestimmt','unbestimmt'],answer:'unbestimmt'},
+{kind:'typing',prompt:'Mehrzahl von: die Geschichte',answer:'die Geschichten'},
+{kind:'choiceQ',prompt:'„Das Lesen macht ihm Spass.“ – wie wird Lesen gebraucht?',options:['als Nomen','als normales Verb'],answer:'als Nomen'},
+{kind:'choiceQ',prompt:'Welche Schreibweise ist richtig?',options:['Das lesen macht Spass.','Das Lesen macht Spass.'],answer:'Das Lesen macht Spass.'}]}
+]},
+{title:'Zusatz D · Fehlerwerkstatt',desc:'Finde typische Fehler und korrigiere sie bewusst.',rule:'Fehler zu erkennen ist eine starke Lernmethode. Frage dich bei jeder falschen Form: Welche der fünf Regeln wurde verletzt?',supplement:true,rounds:[
+{title:'1. Nomen & Geschlecht',desc:'Finde die richtige Form.',type:'choiceQ',qs:[
+{prompt:'Welche Form ist richtig?',options:['der Hund','die Hund','das Hund'],answer:'der Hund'},
+{prompt:'Welche Form ist richtig?',options:['der Freude','die Freude','das Freude'],answer:'die Freude'},
+{prompt:'Welche Form ist richtig?',options:['der Wasser','die Wasser','das Wasser'],answer:'das Wasser'},
+{prompt:'Welche Form ist richtig?',options:['die Käfig','der Käfig','das Käfig'],answer:'der Käfig'},
+{prompt:'Welche Form ist richtig?',options:['das Welt','die Welt','der Welt'],answer:'die Welt'},
+{prompt:'Welche Form ist richtig?',options:['der Spiel','die Spiel','das Spiel'],answer:'das Spiel'}]},
+{title:'2. Artikel-Fehler',desc:'Bestimmt und unbestimmt nicht verwechseln.',type:'choiceQ',qs:[
+{prompt:'Welche Form ist richtig?',options:['ein Katze','eine Katze'],answer:'eine Katze'},
+{prompt:'Welche Form ist richtig?',options:['eine Auto','ein Auto'],answer:'ein Auto'},
+{prompt:'Welche Form ist richtig?',options:['ein Uhr','eine Uhr'],answer:'eine Uhr'},
+{prompt:'Welche Aussage stimmt?',options:['„der Hund“ hat einen bestimmten Artikel.','„der Hund“ hat einen unbestimmten Artikel.'],answer:'„der Hund“ hat einen bestimmten Artikel.'},
+{prompt:'Welche Aussage stimmt?',options:['„ein Hund“ hat einen unbestimmten Artikel.','„ein Hund“ hat einen bestimmten Artikel.'],answer:'„ein Hund“ hat einen unbestimmten Artikel.'},
+{prompt:'Welche Form ist im Plural richtig?',options:['die Kinder','ein Kinder','eine Kinder'],answer:'die Kinder'}]},
+{title:'3. Plural-Fehler',desc:'Vermeide typische falsche Mehrzahlformen.',type:'choiceQ',qs:[
+{prompt:'Mehrzahl von „das Kind“?',options:['die Kinds','die Kinder','die Kinde'],answer:'die Kinder'},
+{prompt:'Mehrzahl von „der Ball“?',options:['die Balle','die Bälle','die Balls'],answer:'die Bälle'},
+{prompt:'Mehrzahl von „das Auto“?',options:['die Autos','die Autoen','die Aute'],answer:'die Autos'},
+{prompt:'Mehrzahl von „die Lampe“?',options:['die Lampes','die Lampen','die Lämpe'],answer:'die Lampen'},
+{prompt:'Einzahl von „die Punkte“?',options:['der Punkt','das Punkt','die Punkt'],answer:'der Punkt'},
+{prompt:'Welche Form kann in Singular und Plural gleich aussehen?',options:['Mädchen','Kinder','Bälle'],answer:'Mädchen'}]},
+{title:'4. Substantivierte Verben – Fehler',desc:'Gross oder klein?',type:'choiceQ',qs:[
+{prompt:'Welche Schreibweise ist richtig?',options:['Das schwimmen macht Spass.','Das Schwimmen macht Spass.'],answer:'Das Schwimmen macht Spass.'},
+{prompt:'Welche Schreibweise ist richtig?',options:['Wir Schwimmen im See.','Wir schwimmen im See.'],answer:'Wir schwimmen im See.'},
+{prompt:'Welche Schreibweise ist richtig?',options:['Das warten dauert lange.','Das Warten dauert lange.'],answer:'Das Warten dauert lange.'},
+{prompt:'Welche Schreibweise ist richtig?',options:['Wir müssen Warten.','Wir müssen warten.'],answer:'Wir müssen warten.'},
+{prompt:'Welche Schreibweise ist richtig?',options:['Das Zeichnen gefällt mir.','Das zeichnen gefällt mir.'],answer:'Das Zeichnen gefällt mir.'},
+{prompt:'Welche Schreibweise ist richtig?',options:['Das Rechnen braucht Konzentration.','Das rechnen braucht Konzentration.'],answer:'Das Rechnen braucht Konzentration.'}]},
+{title:'5. Gemischte Fehler',desc:'Welcher Satz ist vollständig richtig?',type:'choiceQ',qs:[
+{prompt:'Welche Zeile ist richtig?',options:['die Hund – ein Hund','der Hund – ein Hund','das Hund – eine Hund'],answer:'der Hund – ein Hund'},
+{prompt:'Welche Zeile ist richtig?',options:['das Kind – die Kinder','das Kind – die Kinds','der Kind – die Kinder'],answer:'das Kind – die Kinder'},
+{prompt:'Welche Zeile ist richtig?',options:['die Welt – eine Welt','die Welt – ein Welt','der Welt – eine Welt'],answer:'die Welt – eine Welt'},
+{prompt:'Welche Zeile ist richtig?',options:['Wir fahren. / Das Fahren.','Wir Fahren. / Das fahren.'],answer:'Wir fahren. / Das Fahren.'},
+{prompt:'Welche Zeile ist richtig?',options:['das Mädchen – die Mädchen','das Mädchen – die Mädchens'],answer:'das Mädchen – die Mädchen'},
+{prompt:'Welche Zeile ist richtig?',options:['die Freude – weiblich','die Freude – männlich','die Freude – sächlich'],answer:'die Freude – weiblich'}]}
+]},
+{title:'Zusatz E · Generalprobe',desc:'Drei gemischte Prüfungsrunden über alle fünf Lernziele.',rule:'Hier gibt es keine neue Regel und möglichst wenig Hilfe. Ziel ist Transfer: Aufgaben wechseln wie in einem echten Test. Für echte Sicherheit: zwei Generalproben nacheinander mit mindestens 85 % und danach keine offenen Fehler mehr.',supplement:true,rounds:[
+{title:'Generalprobe A',desc:'20 gemischte Aufgaben über alle fünf Lernziele.',type:'mixed',qs:[
+{kind:'multi',items:[['Hund',1],['rennen',0],['Freude',1],['schnell',0],['Wasser',1],['spielen',0]]},
+{kind:'article',word:'Käfig',answer:'der'},
+{kind:'gender',phrase:'die Welt',answer:'weiblich'},
+{kind:'choiceQ',prompt:'Welcher Ausdruck hat einen unbestimmten Artikel?',options:['der Hund','ein Hund','die Hunde'],answer:'ein Hund'},
+{kind:'typing',prompt:'Unbestimmt schreiben: die Katze',answer:'eine Katze'},
+{kind:'typing',prompt:'Mehrzahl von: das Kind',answer:'die Kinder'},
+{kind:'choiceQ',prompt:'Singular oder Plural: „die Spiele“?',options:['Singular','Plural'],answer:'Plural'},
+{kind:'typing',prompt:'Einzahl von: die Punkte',answer:'der Punkt'},
+{kind:'choiceQ',prompt:'Welche Form ist richtig?',options:['Das warten dauert lange.','Das Warten dauert lange.'],answer:'Das Warten dauert lange.'},
+{kind:'choiceQ',prompt:'„Wir warten auf den Bus.“ – warten ist ...',options:['Verb','substantiviertes Verb'],answer:'Verb'},
+{kind:'sentence',text:'Am Morgen nimmt das Mädchen sein Heft und geht zur Schule.',nouns:['Morgen','Mädchen','Heft','Schule']},
+{kind:'article',word:'Vertrauen',answer:'das'},
+{kind:'gender',phrase:'der Wunsch',answer:'männlich'},
+{kind:'choiceQ',prompt:'Bestimmt oder unbestimmt: „eine Uhr“?',options:['bestimmt','unbestimmt'],answer:'unbestimmt'},
+{kind:'typing',prompt:'Mehrzahl von: der Ball',answer:'die Bälle'},
+{kind:'choiceQ',prompt:'Welche Mehrzahl ist richtig?',options:['die Autos','die Autoen','die Aute'],answer:'die Autos'},
+{kind:'typing',prompt:'Mache ein Nomen aus: schwimmen',answer:'das Schwimmen'},
+{kind:'choiceQ',prompt:'Welche Schreibweise ist richtig?',options:['Wir Zeichnen ein Bild.','Wir zeichnen ein Bild.'],answer:'Wir zeichnen ein Bild.'},
+{kind:'choiceQ',prompt:'„das Mädchen – die Mädchen“ zeigt ...',options:['gleiche Form in Singular und Plural','einen Fehler','nur Singular'],answer:'gleiche Form in Singular und Plural'},
+{kind:'choiceQ',prompt:'Welche Aussage stimmt?',options:['Nomen werden grossgeschrieben.','Nomen werden immer kleingeschrieben.'],answer:'Nomen werden grossgeschrieben.'}]},
+{title:'Generalprobe B',desc:'20 neue gemischte Aufgaben.',type:'mixed',qs:[
+{kind:'multi',items:[['Gedanke',1],['finden',0],['Nase',1],['ganz',0],['Spiel',1],['ruhig',0]]},
+{kind:'article',word:'Butter',answer:'die'},
+{kind:'gender',phrase:'das Geräusch',answer:'sächlich'},
+{kind:'choiceQ',prompt:'Welcher Ausdruck ist bestimmt?',options:['ein Auto','das Auto','eine Flasche'],answer:'das Auto'},
+{kind:'typing',prompt:'Bestimmt schreiben: ein Saft',answer:'der Saft'},
+{kind:'typing',prompt:'Mehrzahl von: die Lampe',answer:'die Lampen'},
+{kind:'choiceQ',prompt:'Singular oder Plural: „der Name“?',options:['Singular','Plural'],answer:'Singular'},
+{kind:'typing',prompt:'Einzahl von: die Bänke',answer:'die Bank'},
+{kind:'choiceQ',prompt:'Welche Form ist richtig?',options:['Das Fahren macht Spass.','Das fahren macht Spass.'],answer:'Das Fahren macht Spass.'},
+{kind:'choiceQ',prompt:'„Die Kinder lachen laut.“ – lachen ist ...',options:['Verb','substantiviertes Verb'],answer:'Verb'},
+{kind:'sentence',text:'Der Vater stellt die Flasche auf den Tisch neben das Fenster.',nouns:['Vater','Flasche','Tisch','Fenster']},
+{kind:'article',word:'Meer',answer:'das'},
+{kind:'gender',phrase:'die Lüge',answer:'weiblich'},
+{kind:'choiceQ',prompt:'Bestimmt oder unbestimmt: „ein Hund“?',options:['bestimmt','unbestimmt'],answer:'unbestimmt'},
+{kind:'typing',prompt:'Mehrzahl von: das Heft',answer:'die Hefte'},
+{kind:'choiceQ',prompt:'Welche Form ist richtig?',options:['das Mädchen – die Mädchen','das Mädchen – die Mädchens'],answer:'das Mädchen – die Mädchen'},
+{kind:'typing',prompt:'Mache ein Nomen aus: warten',answer:'das Warten'},
+{kind:'choiceQ',prompt:'Was ist das substantivierte Verb zu „sprechen“?',options:['die Sprache','das Sprechen','sprechen'],answer:'das Sprechen'},
+{kind:'choiceQ',prompt:'Welche Probe hilft zu erkennen, ob „Freude“ ein Nomen ist?',options:['der-die-das-Probe','nur die Pluralprobe','Verbprobe'],answer:'der-die-das-Probe'},
+{kind:'choiceQ',prompt:'„der Gedanke“ ist ...',options:['männlich','weiblich','sächlich'],answer:'männlich'}]},
+{title:'Generalprobe C',desc:'20 weitere Aufgaben – Abschlusscheck.',type:'mixed',qs:[
+{kind:'multi',items:[['Wunsch',1],['spielen',0],['Telefon',1],['plötzlich',0],['Stunde',1],['finden',0]]},
+{kind:'article',word:'Telefon',answer:'das'},
+{kind:'gender',phrase:'die Stunde',answer:'weiblich'},
+{kind:'choiceQ',prompt:'Welcher unbestimmte Artikel passt zu „Uhr“?',options:['ein','eine'],answer:'eine'},
+{kind:'typing',prompt:'Unbestimmt schreiben: das Einhorn',answer:'ein Einhorn'},
+{kind:'typing',prompt:'Mehrzahl von: der Punkt',answer:'die Punkte'},
+{kind:'choiceQ',prompt:'Singular oder Plural: „die Leute“?',options:['Singular','Plural'],answer:'Plural'},
+{kind:'typing',prompt:'Einzahl von: die Kinder',answer:'das Kind'},
+{kind:'choiceQ',prompt:'Welche Form ist richtig?',options:['Das Zeichnen gefällt mir.','Das zeichnen gefällt mir.'],answer:'Das Zeichnen gefällt mir.'},
+{kind:'choiceQ',prompt:'„Wir rechnen im Heft.“ – rechnen ist ...',options:['Verb','substantiviertes Verb'],answer:'Verb'},
+{kind:'sentence',text:'Nach der Schule fährt der Junge mit dem Bus zum Training.',nouns:['Schule','Junge','Bus','Training']},
+{kind:'article',word:'Nase',answer:'die'},
+{kind:'gender',phrase:'das Wasser',answer:'sächlich'},
+{kind:'choiceQ',prompt:'Welcher Ausdruck hat einen bestimmten Artikel?',options:['eine Flasche','die Flasche','ein Auto'],answer:'die Flasche'},
+{kind:'typing',prompt:'Mehrzahl von: der Wurm',answer:'die Würmer'},
+{kind:'choiceQ',prompt:'Welche Mehrzahl ist richtig?',options:['die Zeugnisse','die Zeugnise','die Zeugnissen'],answer:'die Zeugnisse'},
+{kind:'typing',prompt:'Mache ein Nomen aus: rechnen',answer:'das Rechnen'},
+{kind:'choiceQ',prompt:'Welche Schreibweise ist richtig?',options:['Das Betreten ist verboten.','Das betreten ist verboten.'],answer:'Das Betreten ist verboten.'},
+{kind:'choiceQ',prompt:'„eine Katze“ ist ...',options:['unbestimmt','bestimmt'],answer:'unbestimmt'},
+{kind:'choiceQ',prompt:'„das Spiel“ ist ...',options:['sächlich','männlich','weiblich'],answer:'sächlich'}]}
 ]}
+
 ];
-function k(t,r){return t+'-'+r}function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}updateProgress()}function updateProgress(){const total=topics.reduce((s,t)=>s+t.rounds.length,0),done=Object.keys(state.done).length,p=Math.round(done/total*100);$('#fill').style.width=p+'%';$('#pct').textContent=p+'%'}
+function k(t,r){return t+'-'+r}function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}updateProgress()}function updateProgress(){const required=topics.map((t,i)=>({t,i})).filter(x=>!x.t.supplement),total=required.reduce((s,x)=>s+x.t.rounds.length,0),done=Object.keys(state.done).filter(key=>{const ti=Number(key.split('-')[0]);return topics[ti]&&!topics[ti].supplement}).length,p=Math.round(done/total*100);$('#fill').style.width=p+'%';$('#pct').textContent=p+'%'}
 function topicComplete(t){return topics[t].rounds.every((_,r)=>state.done[k(t,r)])}function topicAverage(t){const vals=topics[t].rounds.map((_,r)=>state.scores[k(t,r)]).filter(v=>v!==undefined);return vals.length?Math.round(vals.reduce((a,b)=>a+b,0)/vals.length):null}
-function renderTopicHome(){$('#exercise').classList.remove('active');$('#roundHome').classList.add('hidden');$('#topicHome').classList.remove('hidden');const box=$('#topics');box.innerHTML='';topics.forEach((t,i)=>{const b=document.createElement('button');b.type='button';b.className='topic'+(topicComplete(i)?' done':'');const avg=topicAverage(i);b.innerHTML=`<div class="n">${t.title}</div><div class="d">${t.desc}</div><span class="badge">${avg===null?'Start':topicComplete(i)?'✓ '+avg+'%':'Weiter · '+avg+'%'}</span>`;b.addEventListener('click',()=>renderRoundHome(i));box.appendChild(b)});updateProgress()}
+function renderTopicHome(){$('#exercise').classList.remove('active');$('#roundHome').classList.add('hidden');$('#topicHome').classList.remove('hidden');const box=$('#topics'),extra=$('#supplements');box.innerHTML='';extra.innerHTML='';topics.forEach((t,i)=>{const b=document.createElement('button');b.type='button';b.className='topic'+(topicComplete(i)?' done':'');const avg=topicAverage(i);b.innerHTML=`<div class="n">${t.title}</div><div class="d">${t.desc}</div><span class="badge">${avg===null?'Start':topicComplete(i)?'✓ '+avg+'%':'Weiter · '+avg+'%'}</span>`;b.addEventListener('click',()=>renderRoundHome(i));(t.supplement?extra:box).appendChild(b)});updateProgress()}
 function renderRoundHome(i=topic){topic=i;mistakeMode=false;$('#topicHome').classList.add('hidden');$('#exercise').classList.remove('active');$('#roundHome').classList.remove('hidden');$('#topicLabel').textContent=topics[topic].title;$('#topicRule').innerHTML='<strong>Merksatz</strong>'+topics[topic].rule;const box=$('#levels');box.innerHTML='';topics[topic].rounds.forEach((r,j)=>{const b=document.createElement('button');b.type='button';b.className='level'+(state.done[k(topic,j)]?' done':'');b.innerHTML=`<div class="n">${r.title}</div><div class="d">${r.desc}</div><span class="badge">${state.done[k(topic,j)]?'✓ '+state.scores[k(topic,j)]+'%':'Start'}</span>`;b.addEventListener('click',()=>startRound(j));box.appendChild(b)});const ms=state.mistakes[topic]||[];$('#mistakes').disabled=ms.length===0;$('#mistakes').style.opacity=ms.length===0?'.55':'1';updateProgress()}
 function startRound(j){round=j;q=0;answered=false;mistakeMode=false;topics[topic].rounds[round].qs.forEach(x=>delete x._ok);$('#roundHome').classList.add('hidden');$('#exercise').classList.add('active');renderQuestion()}
 function startMistakes(){const ms=state.mistakes[topic]||[];if(!ms.length)return;mistakeMode=true;mistakeQuestions=JSON.parse(JSON.stringify(ms));q=0;answered=false;$('#roundHome').classList.add('hidden');$('#exercise').classList.add('active');renderQuestion()}
@@ -214,7 +389,7 @@ else if(x.type==='typing'){const val=($('#ans').value||'').trim().replace(/\s+/g
 answered=true;if(!mistakeMode){topics[topic].rounds[round].qs[q]._ok=ok;if(!ok)remember(x);else removeMistake(x)}else if(ok)removeMistake(x);save();if(x.type!=='typing')setFeedback(ok,'Richtig! Sehr gut.'+extra,'Noch nicht ganz. Die richtige Lösung ist grün markiert.'+extra);else if(ok)setFeedback(true,'Richtig! Sehr gut.');$('#check').classList.add('hidden');$('#next').classList.remove('hidden')}
 function finish(){if(mistakeMode){save();const n=(state.mistakes[topic]||[]).length;$('#content').innerHTML=`<div class="prompt">Fehlerrunde beendet</div><div class="scorebox">${n===0?'Alle Fehler verbessert! 🎉':n+' Aufgabe(n) bleiben zum Wiederholen.'}</div>`;clearFeedback();$('#check').classList.add('hidden');$('#next').classList.add('hidden');return}const r=topics[topic].rounds[round],right=r.qs.filter(x=>x._ok).length,score=Math.round(right/r.qs.length*100);state.done[k(topic,round)]=true;state.scores[k(topic,round)]=score;save();$('#content').innerHTML=`<div class="prompt">Runde geschafft! 🎉</div><div class="resultgrid"><div class="stat"><b>${right}</b>richtig</div><div class="stat"><b>${r.qs.length-right}</b>Fehler</div><div class="stat"><b>${score}%</b>Punkte</div></div><p>${score>=80?'Sehr stark! Du kannst mit der nächsten Runde weitermachen.':'Gut geübt. Wiederhole die Runde oder übe später nur die Fehler.'}</p>`;clearFeedback();$('#check').classList.add('hidden');$('#next').classList.add('hidden')}
 function next(){if(q<qCount()-1){q++;renderQuestion();return}finish()}
-$('#check').addEventListener('click',check);$('#next').addEventListener('click',next);$('#back').addEventListener('click',()=>renderRoundHome(topic));$('#allTopics').addEventListener('click',renderTopicHome);$('#mistakes').addEventListener('click',startMistakes);$('#resetAll').addEventListener('click',()=>{if(confirm('Möchtest du wirklich den gesamten Fortschritt löschen?')){state.done={};state.scores={};state.mistakes={0:[],1:[],2:[],3:[],4:[]};save();renderTopicHome()}});renderTopicHome();
+$('#check').addEventListener('click',check);$('#next').addEventListener('click',next);$('#back').addEventListener('click',()=>renderRoundHome(topic));$('#allTopics').addEventListener('click',renderTopicHome);$('#mistakes').addEventListener('click',startMistakes);$('#resetAll').addEventListener('click',()=>{if(confirm('Möchtest du wirklich den gesamten Fortschritt löschen?')){state.done={};state.scores={};state.mistakes={};save();renderTopicHome()}});renderTopicHome();
 })();
 </script>
 </body>
