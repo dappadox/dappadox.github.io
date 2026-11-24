@@ -29,7 +29,7 @@
 <main>
   <div class="glyph"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 <h1>Politika privatnosti — Ukrštenica</h1>
-<p class="meta">Poslednja izmena: 23. novembar 2026.</p>
+<p class="meta">Poslednja izmena: 24. novembar 2026.</p>
 
 <p>Aplikaciju <strong>Ukrštenica</strong> — u Google Play prodavnici i u
 App Store-u navedenu kao <strong>„Ukrštene reči: Skandinavka"</strong>, paket
@@ -61,6 +61,11 @@ koje podatke aplikacija i sajt obrađuju i zašto.</p>
     uređaju.</li>
   <li><strong>Napredak može da se kopira</strong>, ali samo na mesto koje
     ti izabereš — vidi „Kopija napretka".</li>
+  <li><strong>Prijatelji su opcioni.</strong> Ako se takmičiš sa prijateljima
+    ili pošalješ poziv, na naš server idu nadimak koji sam izabereš i
+    nedeljni zbir bodova; vide ih tvoji prijatelji, a svi igrači samo ako
+    sam uključiš listu svih igrača. Ko ima tvoj kod, vidi samo nadimak.
+    Vidi „Prijatelji i poziv".</li>
 </ul>
 
 <h2>Podaci koje aplikacija šalje</h2>
@@ -90,12 +95,15 @@ telemetriju</strong> na naš server; reklamni sloj uz to koristi
       <td>ispravka pogrešnih opisa</td></tr>
   <tr><td>Reklamni ID uređaja</td><td><code>38400000-8cf0-…</code></td>
       <td>prikazivanje reklama — ide Googleu, ne nama (vidi „Reklame")</td></tr>
+  <tr><td>Prijatelji (samo ako ih koristiš)</td><td>nadimak „Mira", kod
+      <code>K7M2</code>, 29 bodova ove nedelje</td>
+      <td>nedeljna tabela prijatelja i poziv (vidi „Prijatelji i poziv")</td></tr>
 </table></div>
 <p>Identifikator instalacije je nasumičan broj koji se ne može povezati sa
 tobom, tvojim Google nalogom, ni sa drugim aplikacijama. Telemetrija se ne
 vezuje za nalog ni kad si prijavljen. Ne prikupljamo lokaciju, kontakte,
-IMEI, niti bilo šta izvan tabele iznad i odeljka „Prijava Google
-nalogom".</p>
+IMEI, niti bilo šta izvan tabele iznad i odeljaka „Prijava Google
+nalogom" i „Prijatelji i poziv".</p>
 
 <h2>Prijava Google nalogom</h2>
 <p>Prijava je <strong>opciona</strong> i uvodi se postepeno: ovaj odeljak
@@ -127,6 +135,40 @@ sajtu. Bez prijave sve radi kao i do sada.</p>
     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
     API Services User Data Policy</a>, uključujući zahteve o ograničenoj
     upotrebi (Limited Use).</li>
+</ul>
+
+<h2 id="prijatelji">Prijatelji i poziv</h2>
+<p>Ovaj odeljak važi od verzije aplikacije koja ima ekran
+<strong>Prijatelji</strong>. Prijava nije potrebna, a nadimak nije
+obavezan.</p>
+<ul>
+  <li><strong>Šta čuvamo.</strong> Nasumični identifikator profila i tajni
+    ključ kojim se aplikacija javlja (na serveru samo njegov otisak), tvoj
+    kod od četiri znaka, nadimak ako ga upišeš, zbir bodova i broj rešenih
+    ukrštenica po nedelji (poslednjih osam nedelja), spisak tvojih prijatelja,
+    ko te je pozvao, do kada traje „bez reklama" kao nagrada za poziv, da li
+    si uključio listu svih igrača i ko je prijavio tvoj nadimak. Uz to
+    čuvamo otisak (SHA-256) identifikatora uređaja, samo da se nagrada za
+    poziv dodeli jednom po telefonu i da niko ne pozove sam sebe.</li>
+  <li><strong>Ko šta vidi.</strong> Tvoji prijatelji vide tvoj nadimak (ili
+    „Igrač" i tvoj kod, ako nadimka nema), bodove i broj rešenih te nedelje.
+    Ko ima tvoj kod — na primer iz linka koji si poslao — od servera može da
+    dobije samo tvoj nadimak. Na <strong>listi svih igrača</strong> si samo
+    ako je sam uključiš (Prijatelji → Svi igrači); tada svi igrači aplikacije
+    vide tvoj nadimak i bodove te nedelje, a isključivanjem nestaješ sa nje.
+    Nadimak koji prijave tri igrača tamo se prikazuje kao „Igrač" i kod.</li>
+  <li><strong>Link koji šalješ.</strong> Kad podeliš rezultat, link nosi tvoj
+    kod (<code>od=…</code>), da primalac vidi ko ga izaziva i da posle
+    instalacije postanete prijatelji. Sajt kod pamti u primaočevom pregledaču
+    sedam dana. Link poziva vodi u Google Play sa oznakom poziva.</li>
+  <li><strong>Zašto.</strong> Samo za tabelu prijatelja i nagradu za poziv. Ne
+    koristimo ih za reklame, ne prodajemo ih i ne delimo ih ni sa kim.</li>
+  <li><strong>Gde.</strong> Na istom serveru kao nalog (Google Cloud,
+    Belgija), šifrovano u prenosu.</li>
+  <li><strong>Brisanje.</strong> Prijatelja uklanjaš dugim dodirom na njegov
+    red. Brisanjem naloga u aplikaciji briše se i profil prijatelja; bez
+    naloga piši nam na adresu ispod (uz kod iz ekrana Prijatelji), pa
+    brišemo profil, kod i sva prijateljstva.</li>
 </ul>
 
 <h2>Reklame</h2>
@@ -270,7 +312,9 @@ brišeš u podešavanjima uređaja.</p>
 naloga i bez reklama. <strong>Napredak</strong> (rešene ukrštenice,
 upisana slova, izbor pisma, tvoj odgovor na pitanje o kolačićima) čuva se
 samo u tvom pregledaču i nikome se ne šalje, osim ako se prijaviš Google
-nalogom; brišeš ga brisanjem podataka sajta u pregledaču.</p>
+nalogom; brišeš ga brisanjem podataka sajta u pregledaču. Ako si stigao
+preko linka prijatelja, sajt sedam dana pamti njegov kod i od našeg servera
+dobija samo njegov nadimak (vidi „Prijatelji i poziv").</p>
 <p><strong>Merenje poseta.</strong> Koristimo PostHog (serveri u EU),
 <strong>bez kolačića</strong> i bez ičega upisanog u tvoj pregledač.
 Beleži se koja strana je otvorena, odakle je poseta stigla, vrsta
