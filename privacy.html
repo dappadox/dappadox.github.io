@@ -29,7 +29,7 @@
 <main>
   <div class="glyph"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 <h1>Politika privatnosti — Ukrštenica</h1>
-<p class="meta">Poslednja izmena: 24. novembar 2026.</p>
+<p class="meta">Poslednja izmena: 25. novembar 2026.</p>
 
 <p>Aplikaciju <strong>Ukrštenica</strong> — u Google Play prodavnici i u
 App Store-u navedenu kao <strong>„Ukrštene reči: Skandinavka"</strong>, paket
@@ -46,8 +46,9 @@ koje podatke aplikacija i sajt obrađuju i zašto.</p>
     ličnih podataka. Prijava Google nalogom (na iPhone-u i iPad-u i Apple
     nalogom) je opciona i služi samo da isti napredak i Premium imaš na
     više uređaja — vidi „Prijava Google nalogom" i „iPhone i iPad".</li>
-  <li><strong>Ima reklama — samo na Androidu.</strong> Izdanje za iPhone
-    i iPad ih nema. Na Androidu ih prikazuje Googleov AdMob: kratka
+  <li><strong>Ima reklama.</strong> Na Androidu, a na iPhone-u i iPad-u od
+    verzije posle 0.8.90 (prva verzija za iPhone i iPad ih nema).
+    Prikazuje ih Googleov AdMob: kratka
     reklama može da se pojavi posle rešene ukrštenice (nikad posle
     dnevne), dok rešavaš iznad mreže može da stoji mala traka sa
     reklamom, a nagradnu reklamu gledaš samo ako sam izabereš. Detalji su
@@ -86,13 +87,18 @@ telemetriju</strong> na naš server; reklamni sloj uz to koristi
       <td>koje ukrštenice rade, koje su preteške</td></tr>
   <tr><td>Vreme rešavanja</td><td><code>6:29</code></td>
       <td>kalibracija težine</td></tr>
-  <tr><td>Razlog kad reklama ne stigne (samo Android)</td><td>tekst greške,
-      trajanje učitavanja, i da li je na telefonu uključen privatni DNS
-      („isključen", „automatski", „upisan") — bez imena DNS servera</td>
+  <tr><td>Razlog kad reklama ne stigne</td><td>kod ili tekst greške i
+      trajanje učitavanja; na Androidu i da li je na telefonu uključen
+      privatni DNS („isključen", „automatski", „upisan") — bez imena DNS
+      servera</td>
       <td>da razlikujemo kvar u aplikaciji od telefona na kome reklame
       ne stižu</td></tr>
   <tr><td>Prijave grešaka</td><td>tekst koji sam uneseš</td>
       <td>ispravka pogrešnih opisa</td></tr>
+  <tr><td>Izveštaj o padu aplikacije</td><td>naziv greške i mesto u kodu
+      gde je nastala</td>
+      <td>popravka padova; šalje se sa sledećim pokretanjem, bez ličnih
+      podataka</td></tr>
   <tr><td>Reklamni ID uređaja</td><td><code>38400000-8cf0-…</code></td>
       <td>prikazivanje reklama — ide Googleu, ne nama (vidi „Reklame")</td></tr>
   <tr><td>Prijatelji (samo ako ih koristiš)</td><td>nadimak „Mira", kod
@@ -200,6 +206,12 @@ Mi tim podacima ne pristupamo i ne spajamo ih sa telemetrijom.</p>
   <li><strong>Reklamni ID možeš da resetuješ ili obrišeš</strong> u
     sistemskim podešavanjima Androida (Podešavanja → Privatnost →
     Oglasi); aplikacija radi i bez njega.</li>
+  <li><strong>Na iPhone-u i iPad-u</strong> (od verzije posle 0.8.90)
+    reklamni ID se koristi samo ako to dozvoliš u Appleovom prozoru
+    „Dozvoli praćenje"; pre njega Googleova poruka objašnjava čemu služi.
+    Bez dozvole reklame i dalje stižu, samo nisu prilagođene tebi, i
+    aplikacija te ne prati kroz druge aplikacije i sajtove. Odluku menjaš
+    u Podešavanja → Privatnost i bezbednost → Praćenje.</li>
 </ul>
 
 <h2>Premium kupovina</h2>
@@ -231,10 +243,11 @@ otkrivanje slova.</p>
 <p>Izdanje za iPhone i iPad (App Store, isto ime) radi isto što i
 Android, uz ove razlike:</p>
 <ul>
-  <li><strong>Nema reklama.</strong> Ne prikazuje reklame, ne sadrži
-    reklamni SDK i ne koristi reklamni ID; odeljak „Reklame" se odnosi
-    samo na Android. Aplikacija te ne prati kroz druge aplikacije i
-    sajtove.</li>
+  <li><strong>Reklame od verzije posle 0.8.90.</strong> Prva verzija
+    (0.8.90) ne prikazuje reklame, ne sadrži reklamni SDK i ne koristi
+    reklamni ID. Od sledeće važi odeljak „Reklame", uz Appleov prozor za
+    praćenje: bez tvoje dozvole aplikacija ne koristi reklamni ID i ne
+    prati te kroz druge aplikacije i sajtove.</li>
   <li><strong>Prijava Apple ili Google nalogom.</strong> Prijava je
     opciona. Kad se prijaviš Apple nalogom, Apple nam pošalje broj tvog
     Apple naloga za ovu aplikaciju i adresu e-pošte — ili, ako izabereš da
@@ -256,8 +269,13 @@ Android, uz ove razlike:</p>
     sajtu. Povraćaj novca ide po Appleovim pravilima
     (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>);
     posle povraćaja Premium se gasi.</li>
-  <li><strong>Bez obaveštenja.</strong> Prvo izdanje nema podsetnik i ne
-    traži dozvolu za obaveštenja.</li>
+  <li><strong>Podsetnik od verzije posle 0.8.90.</strong> Dnevni podsetnik
+    je i ovde lokalno obaveštenje (vidi „Obaveštenja"); dozvolu traži
+    Appleov prozor, a podsetnik se isključuje u Opcijama aplikacije ili u
+    Podešavanjima telefona. Prva verzija (0.8.90) nema podsetnik.</li>
+  <li><strong>Provera nove verzije.</strong> Aplikacija pita Appleovu javnu
+    pretragu App Store-a koja je poslednja verzija; šalje se samo broj
+    aplikacije i zemlja prodavnice.</li>
 </ul>
 
 <h2>Gde podaci idu</h2>
